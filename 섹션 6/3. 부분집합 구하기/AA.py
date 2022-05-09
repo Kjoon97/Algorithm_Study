@@ -1,5 +1,6 @@
 import sys
-#sys.stdin=open("input.txt", "r")
+#sys.stdin = open("input.txt",'r')
+
 def DFS(v):
     if v==n+1:
         for i in range(1, n+1):
@@ -14,7 +15,5 @@ def DFS(v):
 
 if __name__=="__main__":
     n=int(input())
-    ch=[0]*(n+1)
+    ch=[0]*(n+1)  #원소 사용 유무 신호. 체크 변수
     DFS(1)
-    
-
